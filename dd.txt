@@ -4,7 +4,12 @@ JAVA
 JS
 VBS
 
+
 PYTHON
+
+DJANGO
+
+
 
 
 Thanks you
