@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- <suite name="TestNGXMLTest Test Suite" guice-stage="DEVELOPMENT" parallel="classes"> -->
+<suite name="TestNGXMLTest Test Suite" >
+
+	  <listeners>
+			<listener class-name="ExtentReport.NGListener" />
+			
+	  </listeners>
+	
+	<!-- <test thread-count="5" name="TestNGXMLTest Test" verbose="2"> -->
+
+	<test thread-count="1"  name="TestNGXMLTest Test">
+	
+		<parameter name="username" value="paramuser"/>
+		<parameter name="password" value="parampass"/>
+	
+	
+	
+		<classes>
+			<class name="MVNGBDD.NewTest">
+				<methods>
+					<include name="Test1"/>
+					<exclude name="Test2"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+
+
+</suite>
